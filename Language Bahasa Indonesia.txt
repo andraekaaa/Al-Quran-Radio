@@ -8,8 +8,8 @@ export default [{
 }] //<( symbol [start/stop] or {continue} )
 
 1. kalau kamu stuck pada procesing akhir pada terminal, ada 3 cara untuk mengatasinya
-    (a)"true" pada config.yml kemudian "ganti Channel Voice yang berbeda" untuk invite link nya(tested dan bekerja dengan normal)
-    (b) restart busybox= busybox reboot atau out/end sesi terminal(tested not work)
+    (a)"true" pada config.yml kemudian "ganti Token/Channel Voice yang berbeda" untuk invite link nya(tested dan bekerja dengan normal)
+    (b) restart busybox= busybox reboot atau out/end sesi terminal(tested not work) ( commands "kill 1" work tested )
     (c) bila eror dan tidak tahu kenapa coba untuk hapus //comment pada index.js pada bagian paling bawah
     dan lihat apa yang salah(untested)
 
