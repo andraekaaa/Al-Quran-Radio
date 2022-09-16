@@ -1,0 +1,5 @@
+//masukan ke .replit
+//npx node index.js
+
+run = "npx node index.js"
+

@@ -6,19 +6,19 @@ import { createSpinner } from "nanospinner";
 import Database from "st.db";
 import ms from 'ms';
 import express from 'express';
-import radio_choices from "./channels.mjs";
+import radio_choices from "./channels.js";
 const app = express()
 import replit from "quick.replit"
 const config_db = new replit.Database(process.env["REPLIT_DB_URL"])
 const config_delete_db = new Database({path:"./datas/config.yml"})
 await getStarted()
 
-async function getStarted(){
+async function getStarted(){    //JANGAN DIRUBAH, MASUK KE "DATA/CONFIG.YML" UNTUK MERESET CONFIGURASI ANDA = TRUE/FALSE
   if(await config_delete_db.has("delete_this_value_if_you_want_delete_config") != true || await config_delete_db.get("delete_this_value_if_you_want_delete_config") == true){
     await config_db.delete(`bot_config`)
   }
   if(await config_db.get(`bot_config`)) return await startBot()
-  const rainbow = chalkAnimation.pulse('؟ﻡﻮﻴﻟﺍ ﻲﺒﻨﻟﺍ ﻲﻠﻋ ﺖﻴﻠﺻ ﻞﻫ');
+  const rainbow = chalkAnimation.pulse('LOADING JANGAN DI INPUT/CLICK');
 
   setTimeout(async()=> {
      rainbow.stop()
@@ -26,18 +26,18 @@ async function getStarted(){
      const ask1 = await inquirer.prompt({
        name:"token_bot",
        type:'password',
-       message:`ﻚﺑ ﺹ ﺎﺨﻟﺍ ﺕﻮﺒﻟﺍ ﻦﻛﻮﺗ ﻊﺿﻮﺑ ﻢﻗ :`,
+       message:`MASUKAN TOKEN DISINI`,
        mask:"*"
      })
      const ask2 = await inquirer.prompt({
        name:"status_bot",
        type:'input',
-       message:`ﻩﺪﻳﺮﺗ ﻱﺬﻟﺍ ﺕﻮﺒﻟﺍ ﺔﻟﺎﺣ ﺐﺘﻛﺍ :`,
+       message:`SET STATUS BOT KAMU`,
      })
      const ask3 = await inquirer.prompt({
        name:"status_type",
        type:'list',
-       message:`ﺕﻮﺒﻟﺍ ﺔﻟﺎﺣ ﻉﻮﻧ ﺮﺘﺧﺍ :`,
+       message:`PILIH TYPE STATUS BOT KAMU`,
        choices:[
          "Playing","Competing","Listening","Watching"
        ]
@@ -45,12 +45,15 @@ async function getStarted(){
     const ask4 = await inquirer.prompt({
        name:"voice_invitelink",
        type:'input',
-       message:`ﻪﻠﺧﺍﺩ ﺔﻋﺍﺫﻻﺍ ﺚﺑ ﺪﻳﺮﺗ ﻱﺬﻟﺍ ﻡﻭﺮﻟ ﺓﻮﻋﺩ ﻂﺑﺍﺭ ﻊﺿﻮﺑ ﻡﻮﻗ :`
+       message:`BUAT DAN MASUKAN "VOICE" INVITE LINK DISINI`
      })
     const ask5 = await inquirer.prompt({
+      //HAPUS ATAU INPUT COMMENT UNTUK MENGGANTI CARA MEMLIHI CHANNEL
        name:"radio_url",
+       //type:'url',
+       //message: `MASUKAN URL`,
        type:'list',
-       message:`ﺎﻫﺪﻳﺮﺗ ﻲﺘﻟﺍ ﺔﻴﻋﺍﺫﻹﺍ ﺓﺎﻨﻘﻟﺍ ﻢﻳﺮﻜﻟﺍ ﻥﺁﺮﻘﻟﺍ ﻮﻳﺩﺍﺭ ﺭﺎﺘﺧﺍ :`,
+       message:`PILIH RADIO AL-QUR'AN`,
        choices:radio_choices
      })
      await config_db.set(`bot_config`,{
@@ -75,9 +78,9 @@ async function startBot(){
   })
   const config = await config_db.get(`bot_config`)
   client.login(config.token_bot).then(()=>{
-    spinner.update({ text: 'Running the bot...' })
+    spinner.update({ text: 'Menjalankan bot...' })
   }).catch(()=>{
-    spinner.error({ text: 'Invalid Bot Token' })
+    spinner.error({ text: 'Token salah :3' })
   })
 
   // Event Ready
@@ -124,7 +127,7 @@ async function startBot(){
        connection.subscribe(player)
        player.play(resource)
       } catch(e){
-         // في حال ظهور اي خطا احذف الشرطين من سطر اسفل هذه التعليق لمعرفة اين الخطا
+         // jika terjadi kesalahan, hapus COMMENT di bawah ini untuk mengetahui kesalahanya
         //console.error(e)
       }
   }

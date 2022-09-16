@@ -1,49 +1,54 @@
+//ILIST "LIST" YANG BISA DI EDIT DAN DISIMPEN
+//SEBAGAI TUJUAN CEPAT TANPA HARUS MEMASUKAN/MENCARI URL
+//BISA DI TAMBAH ATAU DI EDIT
+//TIDAK BISA LINK YOUTUBE BACA TUTORIAL
+
 export default [{
-  name:"ﻲﺴﻠﺑﺍﺮﻄﻟﺍ ﺪﻤﺣﺃ ﺔﻋﺍﺫﺇ",
+  name:"Ahmed Al-Trabulsi",
   ar:"إذاعة أحمد الطرابلسي",
   value:"https://Qurango.net/radio/ahmed_altrabulsi"
 },{
-  name:"ﻲﺴﻠﺑﺍﺮﻄﻟﺍ ﺮﻀﺧ ﺪﻤﺣﺃ ﺔﻋﺍﺫﺇ",
+  name:"Ahmad Khader Al-tara",
   ar:"إذاعة أحمد خضر الطرابلسي",
   value:"https://Qurango.net/radio/ahmad_khader_altarabulsi"
 },{
-  name:"ﻱﺮﺳﻭﺪﻟﺍ ﻢﻴﻫﺍﺮﺑﺍ ﺔﻋﺍﺫﺇ",
+  name:"Ibrahim Al-Dossari",
   ar:"إذاعة ابراهيم الدوسري",
   value:"https://Qurango.net/radio/ibrahim_aldosari"
 },{
-  name:"ﻲﻠﻘﻴﻌﻤﻟﺍ ﺮﻫﺎﻣ ﺔﻋﺍﺫﺇ",
+  name:"Maher Al-Meaqli",
   ar:"إذاعة ماهر المعيقلي",
   value:"https://Qurango.net/radio/maher_al_meaqli"
 },{
-  name:"ﺪﻤﺼﻟﺍﺪﺒﻋ ﻂﺳﺎﺒﻟﺍﺪﺒﻋ ﺔﻋﺍﺫﺇ",
+  name:"Abdul Basit Abdul Samad Wars",
   ar:"إذاعة عبدالباسط عبدالصمد",
   value:"https://Qurango.net/radio/abdulbasit_abdulsamad_warsh"
 },{
-  name:"ﻢﻳﺮﻜﻟﺍ ﻥﺍﺮﻘﻟﺍ ﺮﻴﺴﻔﺗ ﺔﻋﺍﺫﺇ",
+  name:"Tafseer(Tafsir)",
   ar:"إذاعة تفسير القران الكريم",
   value:"https://qurango.net/radio/tafseer"
 },{
-  name:"ﺡﺎﺒﺼﻟﺍ ﺭﺎﻛﺫﺃ",
+  name:"Adzkar Al-Sabah(dzikir pagi",
   ar:"أذكار الصباح",
   value:"https://qurango.net/radio/athkar_sabah"
 },{
-  name:"ﺀﺎﺴﻤﻟﺍ ﺭﺎﻛﺫﺃ",
+  name:"Adzkar Al-Massa'(dzikir petang",
   ar:"أذكار المساء",
   value:"https://qurango.net/radio/athkar_masa"
 },{
-  name:"ﻢﻳﺮﻜﻟﺍﺪﺒﻋ ﺪﻤﺤﻣ ﺔﻋﺍﺫﺇ",
+  name:"Muhammad Abdul Kareem",
   ar:"إذاعة محمد عبدالكريم",
   value:"https://Qurango.net/radio/mohammad_abdullkarem"
 },{
-  name:"ﺎﻨﺒﻟﺍ ﻲﻠﻋ ﺩﻮﻤﺤﻣ ﺔﻋﺍﺫﺇ",
+  name:"Mahmoud Ali Al-Banna",
   ar:"إذاعة محمود علي البنا",
   value:"https://Qurango.net/radio/mahmoud_ali__albanna"
 },{
-  name:"ﻱﺮﺼﺤﻟﺍ ﻞﻴﻠﺧ ﺩﻮﻤﺤﻣ ﺔﻋﺍﺫﺇ",
+  name:"Mahmoud Khalil Al-Hussary",
   ar:"إذاعة محمود خليل الحصري",
   value:"https://Qurango.net/radio/mahmoud_khalil_alhussary"
 },{
-  name:"ﻲﻔﻳﺬﺤﻟﺍ ﻲﻠﻋ ﺔﻋﺍﺫﺇ",
+  name:"Ali Al-Huthaifi Qalan",
   ar:"إذاعة علي الحذيفي",
   value:"https://Qurango.net/radio/ali_alhuthaifi_qalon"
 },{
@@ -51,11 +56,11 @@ export default [{
   ar:"السيرة النبوية - 400 حلقة عن سيرة نبينا محمد",
   value:"https://Qurango.net/radio/fi_zilal_alsiyra"
 },{
-  name:"ﺲﻳﺪﺴﻟﺍ ﻦﻤﺣﺮﻟﺍﺪﺒﻋ ﺔﻋﺍﺫﺇ",
+  name:"Abdul Rahman Al-Sudais",
   ar:"إذاعة عبدالرحمن السديس",
   value:"https://Qurango.net/radio/abdulrahman_alsudaes"
 },{
-  name:"ﻲﻤﺠﻌﻟﺍ ﺪﻤﺣﺃ ﺔﻋﺍﺫﺇ",
+  name:"Ahmad bin Ali Al Ajmi",
   ar:"إذاعة أحمد العجمي",
   value:"https://Qurango.net/radio/ahmad_alajmy"
 },{
@@ -71,7 +76,7 @@ export default [{
   ar:"إذاعة القران الكريم دولة البحرين",
   value:"https://prod-34-82-94-205.wostreaming.net/ihorizonsradio-sakfmmp3-ibc1?session-id=3453c3202479222be48941d99f762a88"
 },{
-  name:"ﻱﺪﻣﺎﻐﻟﺍ ﺪﻌﺳ ﺔﻋﺍﺫﺇ",
+  name:"Saad alGhamdi",
   ar:"إذاعة سعد الغامدي",
   value:"https://Qurango.net/radio/saad_alghamdi"
 }]

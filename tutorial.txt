@@ -1,0 +1,33 @@
+//ALL CODE BY GITHUB/SHURUHATIK
+
+export default [{
+  name:"nama di list cmd",
+  ar:"nama reciter",
+  value:"STREAMING LINK ATAU LINK DENGAN AKHIRAN.MP3/.MP4 dll"
+}] //<( symbol [start/stop] or {continue} )
+
+1. kalau kamu stuck pada procesing akhir pada terminal, ada 3 cara untuk mengatasinya
+    (a)"true" pada config.yml kemudian "ganti Channel Voice yang berbeda" untuk invite link nya(tested dan bekerja dengan normal)
+    (b) restart busybox= busybox reboot atau out/end sesi terminal(tested not work)
+    (c) bila eror dan tidak tahu kenapa coba untuk hapus //comment pada index.js pada bagian paling bawah
+    dan lihat apa yang salah(untested)
+
+-
+
+2. kamu bisa memutar link youtube dengan mengedit index.js pada nomor 53 comment(//).
+jika tidak bekerja beri comment(//) pada nomor 55.
+
+-
+
+3. pada channels.js, List tidak akan bekerja(tidak memutar audio) jika kalian menggunakan
+link youtube atau link lain tanpa akhiran .mp3/.mp4 dll,(tested dengan youtube url, direct atau playlist) 
+-
+    (a)akan bekerja jika kalian menggunakan direct link ke audio/video dengan akhiran .mp3/.mp4 dll
+    dan akan di putar secara berulang setelah menit audio/video selesai(tested mp4/mp3)
+    begitu juga pada config.yml
+    
+    (b) contoh link akhiran mp4 = https://ia902308.us.archive.org/35/items/full-quran-ahmad-alshalabi/z.mp4
+    contoh link streaming = https://Qurango.net/radio/ahmed_altrabulsi
+
+    (c) tidak bekerja dengan link (?&autoplay=1) contoh=(https://archive.org/details/al-quran-ahmad-al-shalabi_202104/001+Surah+Al-Fatiha.mp3?playset=1&autoplay=1)
+    ada kemungkinan bekerja tetapi di MUTE(sering)
