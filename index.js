@@ -13,7 +13,7 @@ const config_db = new replit.Database(process.env["REPLIT_DB_URL"])
 const config_delete_db = new Database({path:"./datas/config.yml"})
 await getStarted()
 
-async function getStarted(){    //JANGAN DIRUBAH, MASUK KE "DATA/CONFIG.YML" UNTUK MERESET CONFIGURASI ANDA = TRUE/FALSE
+async function getStarted(){    /*JANGAN DIRUBAH, MASUK KE /"DATA/CONFIG.YML" UNTUK MERESET CONFIGURASI ANDA = TRUE/FALSE*/
   if(await config_delete_db.has("delete_this_value_if_you_want_delete_config") != true || await config_delete_db.get("delete_this_value_if_you_want_delete_config") == true){
     await config_db.delete(`bot_config`)
   }
@@ -22,7 +22,7 @@ async function getStarted(){    //JANGAN DIRUBAH, MASUK KE "DATA/CONFIG.YML" UNT
 
   setTimeout(async()=> {
      rainbow.stop()
-     console.log(`\u001b[40;1m ﻢﻳﺮﻜﻟﺍ ﻥﺍﺮﻘﻟﺍ ﻮﻳﺩﺍﺭ ﺕﻮﺑ\n\u001b[0m ﺔﻄﺳﺍﻮﺑ \u001b[47;1m\u001b[30;1mShuruhatik#2443\u001b[0m `)
+     console.log(`\u001b[40;1m JANGAN LUPA BERSHOLAWAT KEPADA NABI MUHAMMAD SHALALLAHU ALAIHI WASSALAM\n\u001b[0m CODE DARI \u001b[47;1m\u001b[30;1mShuruhatik#2443\u001b[0m `)
      const ask1 = await inquirer.prompt({
        name:"token_bot",
        type:'password',
@@ -78,9 +78,9 @@ async function startBot(){
   })
   const config = await config_db.get(`bot_config`)
   client.login(config.token_bot).then(()=>{
-    spinner.update({ text: 'Menjalankan bot...' })
+    spinner.update({ text: 'Sedang Menjalankan Bot...' })
   }).catch(()=>{
-    spinner.error({ text: 'Token salah :3' })
+    spinner.error({ text: 'Token Anda Salah...' })
   })
 
   // Event Ready
