@@ -1,0 +1,5 @@
+- - delete_this_value_if_you_want_delete_config  //commands untuk index.js
+  - false  //true buat mereset data config seperti token dll // ubah ke false lagi, untuk menyimpan data anda
+- - radio_url  //radio url commands 
+  - https://Qurango.net/radio/ahmed_altrabulsi  //kamu bisa langsung mengganti URL ini dengan URL tujuan tanpa mereset token
+  //HAPUS SELURUH TULISAN INI DAN TULISAN DENGAN //(COMMENT) UNTUK MENGGUNAKAN NYA SEBAGAI BACKUP
